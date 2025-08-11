@@ -8,8 +8,8 @@ v1_router.register('posts', views.PostViewSet)
 v1_router.register('groups', views.GroupViewSet)
 v1_router.register('follow', views.FollowViewSet, basename='follow')
 v1_router.register(
-    r'posts/(?P<post_id>\d+)/comments', 
-    views.CommentViewSet, 
+    r'posts/(?P<post_id>\d+)/comments',
+    views.CommentViewSet,
     basename='comments'
 )
 
